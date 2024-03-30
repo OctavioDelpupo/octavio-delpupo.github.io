@@ -58,6 +58,61 @@
 .person-content div h1:nth-child(3) span{    
     animation-delay: 2.5s;
 }
+.person-nome{
+    margin-top:  11rem;
+}
+.stacks-content{    
+ display: flex; 
+ justify-content: center;
+ flex-direction: column;
+ margin-top: 6rem;
+}
+
+.stacks-content h3{
+    color: var(--color-white);
+    font-size: 2rem;
+    margin-left: 20px;
+}
+
+.stacks-content h4{
+    color: var(--color-white);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    margin-left: 20px;
+    font-size: 1rem;
+}
+.stacks ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;       
+}
+
+.stacks ul li{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    list-style: none;
+    position: relative;
+}
+
+.stacks ul li img{
+    width: 30px;
+    height: auto;   
+    transition: transform .3s ease; 
+}
+.stacks ul li div img:hover{
+transform: scale(1.2);
+cursor: pointer;
+}
+
+.stacks ul li div:hover::after{
+    content: attr(data);
+    position: absolute;
+    top: 5rem;
+    left: 1.3rem;
+    color: var(--color-white);    
+}
 
 @keyframes written_text {
     100%{
