@@ -13,3 +13,32 @@ html {
 body{
   font-family: var(--font-family);  
 }
+
+
+
+
+
+
+
+@keyframes written_text {
+  100%{
+      color: var(--color-white);
+  }
+}
+
+@keyframes written_text_name {
+  100%{
+      color: var(--color-blue);
+  }
+}
+
+@keyframes written_text_box {
+  50%{
+      width: 100%;
+      left: 0;
+  }
+  100%{
+      width: 0%;
+      left: 100%;
+  }
+}
